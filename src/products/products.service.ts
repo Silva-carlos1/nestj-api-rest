@@ -36,6 +36,8 @@ export class ProductsService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} product`;
+    return this.PrismaService.product.delete({
+      where: { id },
+    });
   }
 }
