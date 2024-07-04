@@ -17,7 +17,7 @@ export class ProductsService {
   }
 
   findAll() {
-    return `This action returns all products`;
+    return this.PrismaService.product.findMany();
   }
 
   findOne(id: number) {
