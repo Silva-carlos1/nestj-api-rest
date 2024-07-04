@@ -12,4 +12,14 @@ GET http://localhost:3000/products
 
 ####
 
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/1
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "price":  "150.0"
+}
